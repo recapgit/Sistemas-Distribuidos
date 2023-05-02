@@ -3,6 +3,17 @@
     padding: 0;
 }
 
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+    display: none;
+}
+
 h1 {
     font: 40px arial;
     text-align: center;
@@ -64,6 +75,7 @@ form {
     background-color: #4a574a;
 }
 
+/* ------------------Tabela--------------------------- */
 #table-produtos {
     font-family: Arial, sans-serif;
     border-collapse: collapse;
@@ -85,6 +97,103 @@ form {
     padding-top: 12px;
     padding-bottom: 12px;
     text-align: left;
-    background-color: #4f8cdb;
+    background-color: #4f8cdb; 
     color: white;
+    position: sticky;
+    z-index: 1;
+}
+
+.btnTabela img{
+    max-width: 20px;
+    max-height: 20px;
+}
+/* ------------------Fim do css da tabela--------------------------- */
+/* ------------------form--------------------------- */
+#popup-container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+    z-index: 9999;
+    display: none;
+}
+
+#popup-container.active {
+    transform: translate(-50%, -50%);
+}
+
+#popup-header {
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-direction: column; /* adicionado */
+}
+
+#popup-header h2 {
+    font-size: 20px;
+    width: 100%;
+    margin: 0;
+    
+}
+
+#close-form {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    border: none;
+    background-color: transparent;
+    font-size: 23px;
+    color: #3b3b3b;
+    cursor: pointer;
+    transition: color 0.2s;
+}
+
+#close-form:hover {
+    color: red;
+}
+
+#popup-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#popup-form label {
+    width: 200px;
+    display: inline-block;
+    text-align: left;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+#popup-form input {
+    display: inline-block;
+    width: 200px;
+    margin-bottom: 20px;
+    padding: 5px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#salvar-cadastro {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#salvar-cadastro:hover {
+    background-color: #0062cc;
 }

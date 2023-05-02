@@ -12,14 +12,13 @@
 </head>
 
 <body>
+    <div id="overlay"></div>
     <div class="box">
         <h1><img id="logo" src="assets\8256654.png" alt="Logo">Gerenciador de produtos</h1>
         <div class="input-search">
-            <input type="text" , name="produto" placeholder="Produto">
+            <!-- <input type="text" id="search-input" name="produto" placeholder="Produto">
+            <button class="botao" id="pesquisar">Pesquisar</button> -->
             <button class="botao" id="cadastrar">Cadastrar</button>
-            <button class="botao" id="pesquisar">Pesquisar</button>
-            <button class="botao" id="atualizar">Atualizar</button>
-            <button class="botao" id="deletar">Deletar</button>
         </div>
         <section id="results">
             <table id="table-produtos">
@@ -32,10 +31,35 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <!-- Esta parte será preenchida dinamicamente com os dados da API -->
+                    <!-- preenchido dinamicamente com dados aqui -->
                 </tbody>
             </table>
         </section>
+            <div id="popup-container">
+                <div id="popup-header">
+                    <h2>Cadastrar produto</h2>
+                    <button id="close-form">X</button>
+                </div>
+                <form id="popup-form">
+                    <label for="nome-produto">Nome do Produto:</label>
+                    <input class="input-form" type="text" id="nome-produto">
+                    <label for="descricao-produto">Descrição do Produto:</label>
+                    <input class="input-form" type="text" id="descricao-produto">
+                    <label for="preco-produto">Preço do Produto:</label>
+                    <input class="input-form" type="text" id="preco-produto">
+                    <label for="estoque-produto">Estoque do Produto:</label>
+                    <input class="input-form" type="text" id="estoque-produto">
+                    <button class="botao" id="salvar-cadastro">Salvar</button>
+                </form>
+            </div>
+            <div id="atualizar-popup" style="display: none;">
+                <input type="text" id="atualizar-nome" placeholder="Nome">
+                <input type="text" id="atualizar-descricao" placeholder="Descrição">
+                <input type="text" id="atualizar-preco" placeholder="Preço">
+                <input type="text" id="atualizar-estoque" placeholder="Estoque">
+                <button onclick="salvarAtualizacao()">Salvar</button>
+                    <button onclick="fecharAtualizarPopup()">Cancelar</button>
+            </div>
     </div>
 </body>
 
