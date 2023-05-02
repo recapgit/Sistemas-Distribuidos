@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="scripts.js" defer></script>
+    <title>Gerenciador de produtos</title>
+    <link rel="shortcut icon" type="image/x-icon" href="assets/8256654.png" />
+</head>
+
+<body>
+    <div class="box">
+        <h1><img id="logo" src="assets\8256654.png" alt="Logo">Gerenciador de produtos</h1>
+        <div class="input-search">
+            <input type="text" , name="produto" placeholder="Produto">
+            <button class="botao" id="cadastrar">Cadastrar</button>
+            <button class="botao" id="pesquisar">Pesquisar</button>
+            <button class="botao" id="atualizar">Atualizar</button>
+            <button class="botao" id="deletar">Deletar</button>
+        </div>
+        <section id="results">
+            <table id="table-produtos">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Descrição</th>
+                        <th>Preço</th>
+                        <th>Estoque</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Esta parte será preenchida dinamicamente com os dados da API -->
+                </tbody>
+            </table>
+        </section>
+    </div>
+</body>
+
+</html>

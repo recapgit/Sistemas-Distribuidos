@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font: 40px arial;
+    text-align: center;
+    margin-top: 1%;
+    padding-top: 10px;
+}
+
+h1 img {
+    width: 40px;
+    margin-right: 1%;
+    padding-top: 10px;
+}
+
+body {
+    background-color: #ffffffa4;
+}
+
+.box {
+    width: auto;
+    height: auto;
+    background-color: #d6d6d6;
+    border-radius: 10px;
+    box-shadow: 0 0 8px #000;
+    margin: 0 2% 0 2%;
+}
+
+.input-search {
+    width: auto;
+    padding: 2% 1.5% 1%;
+    /* background-color: #aa1b1b; */
+}
+
+input {
+    height: 6px;
+    width: 20%;
+    padding: 1%;
+    margin-right: 2%;
+    border-radius: 10px;
+    outline: none;
+    margin-bottom: 1%;
+}
+
+form {
+    padding: 1% 2% 2%;
+}
+
+.botao {
+    background-color: #16181C;
+    color: rgb(255, 255, 255);
+    padding: 10px 24px;
+    border: none;
+    border-radius: 15px;
+    font-size: 16px;
+    cursor: pointer;
+
+}
+
+.botao:hover {
+    background-color: #4a574a;
+}
+
+#table-produtos {
+    font-family: Arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+#table-produtos td,
+#table-produtos th {
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#table-produtos tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#table-produtos th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #4f8cdb;
+    color: white;
+}
